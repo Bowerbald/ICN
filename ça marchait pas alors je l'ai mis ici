@@ -1,0 +1,158 @@
+int reference = 1; //niveau (pour la flèche)
+int aleatoire; //variable aléatoire
+int a; //définition de la zone de clicage
+  
+
+PImage fleche,i1,i2,i3,i4,i5,i6,i7,i8,i9,i10,i11,i12,i13,i14,i15,i16,i17,i18,i19,i20,i21,i22,i23,i24,i25,i26,i27,i28,i29,i30,i31,i32,i33;
+
+void draw(){
+}
+
+void setup(){
+  size(1280,720); //définition des dimensions de la fenêtre
+  
+  fleche = loadImage("fleche1.png");
+  i1 = loadImage("1.jpg");
+  i2 = loadImage("2.jpg");
+  i3 = loadImage("3.jpg");
+  i4 = loadImage("4.jpg");
+  i5 = loadImage("5.jpg");
+  i6 = loadImage("6.jpg");
+  i7 = loadImage("7.jpg");
+  i8 = loadImage("8.jpg");
+  i9 = loadImage("9.jpg");
+  i10 = loadImage("10.jpg");
+  i11 = loadImage("11.jpg");
+  i12 = loadImage("12.jpg");
+  i13 = loadImage("13.jpg");
+  i14 = loadImage("14.jpg");
+  i15 = loadImage("15.jpg");
+  i16 = loadImage("16.jpg");
+  i17 = loadImage("17.jpg");
+  i18 = loadImage("18.jpg");
+  i19 = loadImage("19.jpg");
+  i20 = loadImage("20.jpg");
+  i21 = loadImage("21.jpg");
+  i22 = loadImage("22.jpg");
+  i23 = loadImage("23.jpg");
+  i24 = loadImage("24.jpg");
+  i25 = loadImage("25.jpg");
+  i26 = loadImage("26.png");
+  i27 = loadImage("27.jpg");
+  i28 = loadImage("28.jpg");
+  i29 = loadImage("29.jpg");
+  i30 = loadImage("30.jpg");
+  i31 = loadImage("31.jpg");
+  i32 = loadImage("32.jpg");
+  i33 = loadImage("33.png");
+  
+  
+  image(i1,0,0,1280,720);   // redimensionner
+  image(fleche,1070,520); 
+
+}
+
+
+void mouseClicked() { //quand je clique>execution
+  if(mouseX>1060 && mouseY>545){ //si j'appuie ici je sellectionne
+
+    if(reference==3){
+      aleatoire=(int)random(2); //chiffre aléatoire entre 0 et 2 (exclu)
+      //conversion float en int (random est un float == décimal)
+      if(aleatoire==0)
+      reference=4;
+      else //vaut 1
+      reference=5;
+      
+    }else if(reference==4){
+      reference=8; 
+    }
+    else if(reference==18){
+    aleatoire=(int)random(2); //chiffre aléatoire entre 0 et 2 (exclu)
+      //conversion float en int (random est un float == décimal)
+      if(aleatoire==0)
+      reference=19;
+      else //vaut 1
+      reference=23;
+    }
+      else if(reference==22){
+      reference=32;
+       }
+  
+    else{
+      reference=reference+1; //ajoute 1
+ }
+}
+{else if(mouseX<72 && mouseY>538)
+
+}
+
+  
+  if(reference==2)
+    image(i2,0,0,1280,720); 
+  if(reference==3)
+    image(i3,0,0,1280,720);
+  if(reference==4)  //alea 1 
+    image(i4,0,0,1280,720); 
+  if(reference==5)  //alea 2
+    image(i5,0,0,1280,720); 
+  if(reference==6)
+    image(i6,0,0,1280,720); 
+  if(reference==7)
+    image(i7,0,0,1280,720); 
+  if(reference==8)
+    image(i8,0,0,1280,720); 
+  if(reference==9)
+    image(i9,0,0,1280,720); 
+  if(reference==10)
+    image(i10,0,0,1280,720); 
+  if(reference==11)
+    image(i11,0,0,1280,720); 
+  if(reference==12)
+    image(i12,0,0,1280,720); 
+  if(reference==13)
+    image(i13,0,0,1280,720); 
+  if(reference==14)
+    image(i14,0,0,1280,720); 
+  if(reference==15)
+    image(i15,0,0,1280,720); 
+  if(reference==16)
+    image(i16,0,0,1280,720); 
+  if(reference==17)
+    image(i17,0,0,1280,720); 
+  if(reference==18)
+    image(i18,0,0,1280,720); 
+  if(reference==19)
+    image(i19,0,0,1280,720); 
+  if(reference==20)
+    image(i20,0,0,1280,720); 
+  if(reference==21)
+    image(i21,0,0,1280,720); 
+  if(reference==22)
+    image(i22,0,0,1280,720);  
+  if(reference==23)
+    image(i23,0,0,1280,720); 
+  if(reference==24)
+    image(i24,0,0,1280,720); 
+  if(reference==25)
+    image(i25,0,0,1280,720); 
+  if(reference==26)
+    image(i26,0,0,1280,720); 
+  if(reference==27)
+    image(i27,0,0,1280,720); 
+  if(reference==28)
+    image(i28,0,0,1280,720);  
+  if(reference==29)
+    image(i29,0,0,1280,720); 
+  if(reference==30)
+    image(i30,0,0,1280,720); 
+  if(reference==31)
+    image(i31,0,0,1280,720); 
+  if(reference==32)
+    image(i32,0,0,1280,720); 
+  if(reference==33)
+    image(i33,0,0,1280,720); 
+
+  
+   image(fleche,1070,520); //affiche la fleche par dessus 
+  }
